@@ -1,0 +1,43 @@
+# OVOMonie Robots.txt - SEO Optimization
+
+# Allow all search engines
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /private
+Disallow: /*.json$
+Disallow: /api/
+Allow: /dist/
+
+# Google Specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing Specific
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Social Media Crawlers
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# LinkedIn Crawler
+User-agent: Mozilla/5.0 (compatible; LinkedInBot/1.0
+Allow: /
+
+# Sitemap locations
+Sitemap: https://ovomonie.com/sitemap.xml
+Sitemap: https://ovomonie.com/sitemap-products.xml
+
+# Crawl delay for other bots
+User-agent: *
+Crawl-delay: 1
+Request-rate: 30/60
