@@ -3,14 +3,140 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="0; url=/account-deletion/" />
-    <link rel="canonical" href="https://ovomonie.com/account-deletion/" />
-    <title>Redirecting to OVOMonie Account Deletion</title>
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Request OVOMonie account deletion, see what data is removed, what may be retained, and how long the process takes."
+    />
+    <link rel="canonical" href="https://ovomonie.com/delete-account/" />
+    <link rel="icon" href="/assets/ovomonie-logo-D0smmw0D.png" type="image/png" />
+    <title>OVOMonie Account Deletion Request</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #06131f;
+        --bg-2: #091a2a;
+        --panel: rgba(10, 24, 38, 0.82);
+        --line: rgba(255, 255, 255, 0.12);
+        --text: #edf4fb;
+        --muted: rgba(237, 244, 251, 0.72);
+        --accent: #d5b35a;
+        --accent-2: #77c5ff;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at top left, rgba(213, 179, 90, 0.22), transparent 30%),
+          radial-gradient(circle at top right, rgba(119, 197, 255, 0.16), transparent 28%),
+          linear-gradient(180deg, var(--bg), var(--bg-2));
+        color: var(--text);
+        min-height: 100vh;
+      }
+      .shell {
+        width: min(920px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 32px 0 56px;
+      }
+      .card {
+        position: relative;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        background: var(--panel);
+        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+        padding: 28px;
+      }
+      .card::after {
+        content: "";
+        position: absolute;
+        inset: auto -120px -120px auto;
+        width: 260px;
+        height: 260px;
+        border-radius: 999px;
+        background: radial-gradient(circle, rgba(213, 179, 90, 0.18), transparent 70%);
+        pointer-events: none;
+      }
+      .badge {
+        display: inline-flex;
+        margin-bottom: 16px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: rgba(213, 179, 90, 0.12);
+        color: #f0ddaa;
+        border: 1px solid rgba(213, 179, 90, 0.25);
+      }
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 4vw, 3.4rem);
+        line-height: 1.05;
+        letter-spacing: -0.03em;
+      }
+      h2 { margin: 28px 0 12px; }
+      p, li { color: var(--muted); line-height: 1.7; }
+      ul { padding-left: 20px; }
+      a { color: var(--accent-2); }
+      .footer {
+        margin-top: 22px;
+        padding-top: 18px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        color: rgba(237, 244, 251, 0.5);
+        font-size: 0.92rem;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .footer a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 600;
+      }
+    </style>
   </head>
   <body>
-    <p>Redirecting to the OVOMonie account deletion page...</p>
-    <script>
-      window.location.replace('/account-deletion/');
-    </script>
+    <main class="shell">
+      <section class="card">
+        <span class="badge">Account Deletion</span>
+        <h1>Request deletion of your OVOMonie account</h1>
+        <p>
+          If you no longer wish to use OVOMonie, you can request deletion of your account by contacting our support team.
+          Because OVOMonie is a financial service, some records may be retained where required by law or regulation.
+        </p>
+
+        <h2>How to request deletion</h2>
+        <ul>
+          <li>Email <a href="mailto:admin@ovomonie.com">admin@ovomonie.com</a> from the email linked to your account.</li>
+          <li>Include your full name and registered phone number.</li>
+          <li>Support may ask you to verify your identity before the request is processed.</li>
+        </ul>
+
+        <h2>What is deleted</h2>
+        <ul>
+          <li>Account profile information no longer required for retention.</li>
+          <li>App preferences associated with the account.</li>
+          <li>Non-retained support data.</li>
+        </ul>
+
+        <h2>What may be retained</h2>
+        <ul>
+          <li>Transaction, audit, and settlement records required by law.</li>
+          <li>KYC and identity verification records where retention is required.</li>
+          <li>Fraud prevention and compliance records for the applicable retention period.</li>
+        </ul>
+
+        <h2>How long it takes</h2>
+        <p>Deletion is usually completed within 14 business days after verification.</p>
+
+        <h2>Support</h2>
+        <p>Contact: <a href="tel:+2349113500800">+234 911 350 0800</a> or <a href="mailto:admin@ovomonie.com">admin@ovomonie.com</a></p>
+
+        <div class="footer">
+          <span>OVOMonie account deletion information page.</span>
+          <a href="/account-deletion/">Account deletion request</a>
+          <a href="/licenses/">Licenses</a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
